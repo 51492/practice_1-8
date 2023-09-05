@@ -10,10 +10,37 @@ body{
   margin: 0 auto;
 }
 
+/*↓↓↓↓↓listのスタイル↓↓↓↓↓*/
 .list-contents{
-  padding:50px 0;
+  padding:50px 0 50px 0;
 }
 
-.list{
+.list-text{
+  padding:20px;
+}
 
+/*↓↓↓↓↓color-boxのスタイル↓↓↓↓↓*/
+.list-text:nth-child(odd){
+  background-color: #f1f1f1
+}
+
+.box-contents{
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-box{
+  width: 30%;
+  height: 200px;
+  margin: 0 5% 40px 0;
+  background-color: yellow;
+}
+
+.color-box:nth-child(3n){
+  margin: 0 0 40px 0;
+}
+
+.color-box:nth-child(4n+1){
+  background-color: orange;
 }
